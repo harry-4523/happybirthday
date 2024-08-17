@@ -1,0 +1,156 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+   font-family: sans-serif;
+}
+
+.main {
+   position: absolute;
+   background: #111;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   overflow: hidde;
+   gap: 0 10px;
+   
+}
+
+/* .plane{
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+} */
+
+.box{
+   position: relative;
+   font-size: 1.33em;
+   font-weight: 700;
+   text-transform: uppercase;
+   color:#222;
+}
+
+.box:hover {
+   color: rgb(0,221,255)
+}
+
+.box:nth-child(odd)::before{
+   content: ".Happy Birthday .";
+}
+
+.box:nth-child(even)::before{
+   content: ".Keep Smiling .";
+   filter: hue-rotate(180deg);
+}
+
+.box.animate {
+   color: rgb(0,221,255);
+}
+
+/* .cube{
+   z-index: 1;
+   height: 250px;
+   width: 250px;
+   position: absolute;
+   top: 100px;
+   left: 100px;
+   transform-style: preserve-3d;
+   animation: animate 5s infinite;
+}
+
+@keyframes animate{
+   0%{
+      transform: rotateX(45deg) rotateY(-45deg);
+   }
+   25%{
+      transform: rotateX(-45deg) rotateY(-45deg);
+   }
+   50%{
+      transform: rotateX(45deg) rotateY(45deg);
+   }
+   75%{
+      transform: rotateX(-45deg) rotateY(45deg);
+   }
+   100%{
+      transform: rotateX(45deg) rotateY(-45deg);
+   }
+}
+
+.card{
+   height: 250px;
+   width: 250px;
+   /* background: black; */
+   border-radius: 10px;
+   text-align: center;
+   padding: 100px 0px;
+   color: white;
+   background: balck;
+   border: 2px solid white;
+   font-size: 32px;
+   box-sizing: border-box;
+   transition: all 1s;
+}
+
+#front{
+   transform: translateZ(125px);
+}
+
+#back{
+   transform: translateZ(-125px);
+}
+
+#left{
+   right: 125px;
+   transform: rotateY(-90deg);
+}
+
+#right{
+   right: 125px;
+   transform: rotateY(90deg);
+}
+
+#bottom{
+   top: 125px;
+   transform: rotateX(-90deg);
+}
+
+#top{
+   bottom: 125px;
+   transform: rotateX(90deg);
+}
+
+input{
+   height: 50px;
+   width: 200px;
+   background: pink;
+   border-radius: 50px;
+   font-size: 22px;
+   cursor: crosshair;
+   position: absolute;
+   top: -100px;
+   left: 175px;
+   z-index: 2;
+}
+
+input:focus~ .cube #front{
+   transform: translateZ(180px) rotateY(360deg);
+}
+input:focus~ .cube #back{
+   transform: translateZ(-180px) rotateY(360deg);
+}
+input:focus~ .cube #left{
+   right: 180px;
+}
+input:focus~ .cube #right{
+   left: 180px;
+}
+input:focus~ .cube #top{
+   bottom: 180px;
+}
+input:focus~ .cube #bottom{
+   top: 180px;
+} */
